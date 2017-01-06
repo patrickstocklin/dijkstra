@@ -32,11 +32,6 @@ public class Dijkstra {
 	}
 	
 	//Returns the Node with the Lowest Distance from our Set of UnsettledNodes
-	
-	/*
-	 *	1st - A, 
-	 */
-	
 	private static Node getLowestDistanceNode(Set <Node> unsettledNodes) {
 		Node lowestDistanceNode = null;
 		int lowestDistance = Integer.MAX_VALUE;
@@ -51,10 +46,6 @@ public class Dijkstra {
 	}
 	// Assigns the minimum distance from the sourceNode to the evaluationNode to the evaluationNode's attribute
 	// Also assigns the shortestPath thus far in the form of a LinkedList
-	/*
-	 * 1st - (A,B) -> B = 10, (A,C) -> C = 15
-	 * 
-	 */
 	private static void calculateMinimumDistance(Node evaluationNode, Integer edgeWeight, Node sourceNode) {
 		Integer sourceDistance = sourceNode.getDistance();
 		if (sourceDistance + edgeWeight < evaluationNode.getDistance()) {
